@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.rolesBasedScreens.FarmerForm">
+
+    <RelativeLayout
+        android:id="@+id/mToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/BtnGoBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:onClick="GoBack"
+            android:paddingStart="@dimen/global_left_padding"
+            android:paddingEnd="10dp"
+            android:src="@mipmap/ic_arrow_back" />
+
+        <TextView
+            style="@style/MyCustomToolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Farmer Form" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mToolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="@dimen/global_left_padding"
+                android:layout_marginEnd="@dimen/global_right_padding"
+                android:text="Type"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup_Type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:gravity="center_vertical"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="35dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioChicken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textColor="#757575"
+                    android:textSize="18sp"
+                    android:text="Chicken"/>
+
+                <RadioButton
+                    android:id="@+id/radioCow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textColor="#757575"
+                    android:textSize="18sp"
+                    android:text="Cow" />
+
+                <RadioButton
+                    android:id="@+id/radioGoat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textColor="#757575"
+                    android:textSize="18sp"
+                    android:text="Goat" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="@dimen/global_left_padding"
+                android:layout_marginEnd="@dimen/global_right_padding"
+                android:text="Gender"
+                android:textColor="#000000"
+                android:textSize="22sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup_Gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:gravity="center_vertical"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="35dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textColor="#757575"
+                    android:textSize="18sp"
+                    android:text="Male"/>
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textColor="#757575"
+                    android:textSize="18sp"
+                    android:text="Female" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="@dimen/global_left_padding"
+                android:layout_marginEnd="@dimen/global_right_padding"
+                android:text="Birth date"
+                android:textColor="#000000"
+                android:textSize="22sp" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/FieldDOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/global_left_padding"
+                android:layout_marginEnd="@dimen/global_right_padding"
+                android:focusableInTouchMode="false"
+                android:editable="false"
+                android:hint="Date of Birth"
+                android:textSize="18sp"
+                android:textColor="#646464"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="@dimen/global_left_padding"
+                android:layout_marginEnd="@dimen/global_right_padding"
+                android:text="Weight"
+                android:textColor="#000000"
+                android:textSize="22sp" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/FieldWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/global_left_padding"
+                android:layout_marginEnd="@dimen/global_right_padding"
+                android:hint="Input weight here (kg)"
+                android:textSize="18sp"
+                android:textColor="#646464"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:layout_marginTop="4dp"/>
+
+            <Button
+                android:id="@+id/submitButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="@dimen/global_left_padding"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="@dimen/global_right_padding"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_btn_enabled"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/ButtonEnabled"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

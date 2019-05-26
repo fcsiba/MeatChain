@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Profile.UserProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/mToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/BtnGoBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:onClick="GoBack"
+            android:paddingStart="@dimen/global_left_padding"
+            android:paddingEnd="10dp"
+            android:src="@mipmap/ic_arrow_back" />
+
+        <TextView
+            style="@style/MyCustomToolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="User Profile" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/global_left_padding"
+            android:layout_marginEnd="@dimen/global_right_padding"
+            android:hint="Name"
+            app:boxBackgroundColor="@null">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/UserNameField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@mipmap/outline_person_outline_black_24"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/colorPrimary"
+                android:focusableInTouchMode="false"
+                android:editable="false"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/global_left_padding"
+            android:layout_marginEnd="@dimen/global_right_padding"
+            android:hint="Email"
+            app:boxBackgroundColor="@null">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/UserEmailField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@mipmap/email_icon"
+                android:drawablePadding="10dp"
+                android:focusableInTouchMode="false"
+                android:editable="false"
+                android:drawableTint="@color/colorPrimary"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/global_left_padding"
+            android:layout_marginEnd="@dimen/global_right_padding"
+            android:hint="Password"
+            app:boxBackgroundColor="@null">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/PassField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@mipmap/pass_icon"
+                android:drawablePadding="10dp"
+                android:focusableInTouchMode="false"
+                android:editable="false"
+                android:drawableTint="@color/colorPrimary"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/global_left_padding"
+            android:layout_marginEnd="@dimen/global_right_padding"
+            android:hint="My Role"
+            app:boxBackgroundColor="@null">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/RoleField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/colorPrimary"
+                android:focusableInTouchMode="false"
+                android:editable="false"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/ChangePassBtn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="@dimen/global_left_padding"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="@dimen/global_right_padding"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_btn_enabled"
+            android:text="Change Password"
+            android:textAllCaps="false"
+            android:textColor="@color/ButtonEnabled"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

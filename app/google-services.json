@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1018345651550",
+    "firebase_url": "https://meatchain-311dd.firebaseio.com",
+    "project_id": "meatchain-311dd",
+    "storage_bucket": "meatchain-311dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018345651550:android:dbb0d39803cba932",
+        "android_client_info": {
+          "package_name": "com.android.codeaire.meatchain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1018345651550-hcdshh9cb9vj8v9509ndvhjjtqu173df.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqZY3sYf17AkYWTDzWJEBss-RquFUh_x0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1018345651550-hcdshh9cb9vj8v9509ndvhjjtqu173df.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/splash_bg"
+    tools:context=".activities.splash.SplashScreen">
+
+    <RelativeLayout
+        android:id="@+id/splash_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintDimensionRatio="904:241"
+                android:background="#00ffffff"
+                android:scaleType="fitXY"
+                android:src="@drawable/splash_top" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/splash_top"
+        android:layout_above="@id/splash_bottom">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageButton
+                android:id="@+id/GoBackThirtySec"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintDimensionRatio="889:882"
+                android:background="#00ffffff"
+                android:scaleType="fitXY"
+                android:src="@drawable/splash_center" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/splash_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintDimensionRatio="904:137"
+                android:background="#00ffffff"
+                android:scaleType="fitXY"
+                android:src="@drawable/splash_bottom" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

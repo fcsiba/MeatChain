@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ViewProductsActivity">
+
+    <RelativeLayout
+        android:id="@+id/mToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/BtnGoBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:onClick="GoBack"
+            android:paddingStart="@dimen/global_left_padding"
+            android:paddingEnd="10dp"
+            android:src="@mipmap/ic_arrow_back" />
+
+        <TextView
+            style="@style/MyCustomToolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="My Products" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@id/mToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/WindowBackground"/>
+
+    <RelativeLayout
+        android:id="@+id/blurLayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cbffffff"
+        android:layout_below="@id/mToolbar"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true" />
+
+        <ProgressBar
+            android:id="@+id/blurLayerloader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/center"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/AppThemeMyLight" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/blurLayerloader"
+            android:layout_centerHorizontal="true"
+            android:text="processing…"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

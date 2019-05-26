@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WindowBackground"
+    tools:context=".activities.authentication.SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/mainLogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <ImageView
+                    android:id="@+id/icon_logo"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/ic_launcher_rect_big" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Meat Chain"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="28sp"
+                    android:layout_marginTop="-20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/global_left_padding"
+                android:layout_marginEnd="@dimen/global_right_padding"
+                android:hint="Name"
+                app:boxBackgroundColor="@null">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/UserNameField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@mipmap/outline_person_outline_black_24"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/global_left_padding"
+                android:layout_marginEnd="@dimen/global_right_padding"
+                android:hint="Email"
+                app:boxBackgroundColor="@null">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/UserEmailField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@mipmap/email_icon"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/global_left_padding"
+                android:layout_marginEnd="@dimen/global_right_padding"
+                android:hint="Password"
+                app:boxBackgroundColor="@null"
+                app:passwordToggleEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/PassField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@mipmap/pass_icon"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/global_left_padding"
+                android:layout_marginEnd="@dimen/global_right_padding"
+                android:hint="Confirm Password"
+                app:boxBackgroundColor="@null"
+                app:passwordToggleEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/ConfirmPassField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@mipmap/pass_icon"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="22dp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/global_left_padding"
+                android:layout_marginEnd="@dimen/global_right_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Role : "
+                    android:layout_marginEnd="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginStart="12dp"
+                    android:textSize="16sp"/>
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/rolesSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:background="#838383"/>
+
+            <Button
+                android:id="@+id/loginBtn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="@dimen/global_left_padding"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="@dimen/global_right_padding"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_btn_disabled"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textColor="@color/ButtonDisabled"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/blurLayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cbffffff"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true" />
+
+        <ProgressBar
+            android:id="@+id/blurLayerloader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/center"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/AppThemeMyLight" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/blurLayerloader"
+            android:layout_centerHorizontal="true"
+            android:text="processing…"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

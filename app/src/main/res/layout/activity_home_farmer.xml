@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Home.HomeScreen">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/mainLogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/icon_logo"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/ic_launcher_rect_big" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Meat Chain"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="28sp"
+                    android:layout_marginTop="-20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/BorderLine"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/userNameTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"
+                    android:text="Welcome, Syed Asif Ali"/>
+
+                <TextView
+                    android:id="@+id/ViewDetailsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Details"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#1091A8"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/AddProductBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/BorderLine"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:textColor="#242424"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"
+                    android:text="Add Products"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:src="@mipmap/right_arrow"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ScanQRBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/BorderLine"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:textColor="#242424"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"
+                    android:text="Scan QR"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:src="@mipmap/right_arrow"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ViewProductsBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/BorderLine"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:textColor="#242424"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"
+                    android:text="View Products"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:src="@mipmap/right_arrow"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/helpSupportBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/BorderLine"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:textColor="#242424"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"
+                    android:text="Help And Support"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:src="@mipmap/right_arrow"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/AboutUsBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/BorderLine"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:textColor="#242424"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"
+                    android:text="About Us"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:src="@mipmap/right_arrow"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/LogOutBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/BorderLine"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:textColor="#242424"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"
+                    android:text="Log Out"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:src="@mipmap/right_arrow"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/BorderLine"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/blurLayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cbffffff"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true" />
+
+        <ProgressBar
+            android:id="@+id/blurLayerloader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/center"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/AppThemeMyLight" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/blurLayerloader"
+            android:layout_centerHorizontal="true"
+            android:text="processing…"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

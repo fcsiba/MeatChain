@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1051B9</color>
+    <color name="colorPrimaryDark">#002171</color>
+    <color name="colorAccent">#1051B9</color>
+
+    <!--//0d47a1-->
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorOrange">#E78200</color>
+    <color name="colorWhite">#ffffff</color>
+
+
+    <color name="BorderLightDepreciated">#E6E6E6</color>
+    <color name="BorderLight">#FAFAFA</color>
+    <color name="WindowBackground">#FAFAFA</color>
+    <color name="BorderLine">#E2E2E2</color>
+    <color name="colorViewMoreLink">#2196F3</color>
+
+
+    <color name="ButtonEnabled">#FFFFFF</color>
+    <color name="ButtonDisabled">#9B9B9B</color>
+    <color name="bt_error_red">#8f1919</color>
+
+    //material textField error color code
+    <color name="color_textFieldError">#f44336</color>
+</resources>
